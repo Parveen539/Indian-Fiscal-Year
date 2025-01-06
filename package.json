@@ -1,0 +1,24 @@
+{
+  "name": "indian-fiscal-year",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Financial Year"
+  ],
+  "author": "Parveen Sahrawat",
+  "license": "ISC",
+  "description": "Returns Financial Year (Indian Context) for a given Date",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "indian-fiscal-year": "file:"
+  }
+}

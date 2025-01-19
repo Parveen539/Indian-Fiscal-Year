@@ -8,13 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "Indian Financial Year",
-    "Indian Crop Season",
-    "Kharif",
-    "Rabi",
-    "RabiKharif",
-    "Rabi Kharif",
-    "Rabi & Kharif"
+    "Financial Year"
   ],
   "author": "Parveen Sahrawat",
   "license": "ISC",

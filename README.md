@@ -63,4 +63,4 @@ let iay = AY(date);
 iay = 2025-2026
 ```
 
-For Bug Reports please use [issues](https://github.com/Parveen539/Indian-Fiscal-Year/issues)
+For Bug Reports and Suggestions please use [issues](https://github.com/Parveen539/Indian-Fiscal-Year/issues)

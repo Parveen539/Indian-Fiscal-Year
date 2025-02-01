@@ -47,4 +47,4 @@ let ics = FinYear.IndianCropSeason(date);
 ics = "Kharif" / "Rabi"
 ```
 
-For Bug Reports please use [issues section] 
+For Bug Reports please use [issues section] ([text](https://github.com/Parveen539/Indian-Fiscal-Year/issues))

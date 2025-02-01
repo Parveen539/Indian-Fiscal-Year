@@ -6,7 +6,6 @@ var RetrieveFinancialYear = /** @class */ (function () {
     }
     RetrieveFinancialYear.prototype.getIndianFiscalYear = function (date) {
         var FY = '';
-        var Year = date.getFullYear();
         var Month = date.getMonth() + 1;
         switch (true) {
             case Month > 3 && Month <= 12:

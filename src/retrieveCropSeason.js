@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CropSeason = void 0;
-var CropSeason = /** @class */ (function () {
-    function CropSeason() {
+exports.IndianCropSeason = void 0;
+var IndianCropSeason = /** @class */ (function () {
+    function IndianCropSeason() {
     }
-    CropSeason.prototype.getCropSeason = function (date) {
+    IndianCropSeason.prototype.getCropSeason = function (date) {
         var CropSeason = "";
         switch (true) {
             case (date.getMonth() + 1) > 3 && (date.getMonth() + 1) < 11:
@@ -17,7 +17,7 @@ var CropSeason = /** @class */ (function () {
         return CropSeason;
     };
     ;
-    return CropSeason;
+    return IndianCropSeason;
 }());
-exports.CropSeason = CropSeason;
+exports.IndianCropSeason = IndianCropSeason;
 ;

@@ -1,4 +1,4 @@
-class CropSeason {
+class IndianCropSeason {
     public getCropSeason(date : Date): string {
         let CropSeason : string = "";
         switch (true) {
@@ -14,4 +14,4 @@ class CropSeason {
     };
 };
 
-export { CropSeason };
+export { IndianCropSeason };

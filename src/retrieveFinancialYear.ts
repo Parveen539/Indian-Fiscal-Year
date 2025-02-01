@@ -1,7 +1,6 @@
 class RetrieveFinancialYear {
     public getIndianFiscalYear(date : Date) : string {
         let FY : string = '';
-        let Year = date.getFullYear();
         let Month = date.getMonth() + 1;
         switch (true) {
             case Month > 3 && Month <= 12:

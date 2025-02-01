@@ -1,12 +1,18 @@
+import { AssessmentYear } from "./src/retrieveAssessmentYear.js";
+import { IndianCropSeason } from "./src/retrieveCropSeason.js";
 import { RetrieveFinancialYear }  from "./src/retrieveFinancialYear.js";
-import { CropSeason } from "./src/retrieveRabiKharif.js"
 
-export function IndianFiscalYear (date : Date) : string {
+export function FY (date : Date) : string {
     let FinYear = new RetrieveFinancialYear();
     return FinYear.getIndianFiscalYear(date);
 };
 
-export function IndianCropSeason (date : Date) : string {
-    let CS = new CropSeason();
+export function CropSeason (date : Date) : string {
+    let CS = new IndianCropSeason();
     return CS.getCropSeason(date);
-}
+};
+
+export function AY (date : Date) : string {
+    let _AssesmentYear = new AssessmentYear();
+    return _AssesmentYear.getIndianAssessmentYear(date);
+};

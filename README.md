@@ -18,13 +18,13 @@ if you are using a module loader you will need to import the module.
 
 ## Indian Fiscal Year  
 ```js
-import FinYear from 'indian-fiscal-year';
+import {FY} from 'indian-fiscal-year';
 ```
 
 ## Input
 ```js
 let date = new Date();
-let ify = FinYear.IndianFiscalYear(date);
+let ify = FY(date);
 ```
 
 ## Output
@@ -33,18 +33,34 @@ ify = 2024-2025
 ```
 ## Indian Crop Seasons  
 ```js
-import FinYear from 'indian-fiscal-year';
+import {CropSeason} from 'indian-fiscal-year';
 ```
 
 ## Input
 ```js
 let date = new Date();
-let ics = FinYear.IndianCropSeason(date);
+let ics = CropSeason(date);
 ```
 
 ## Output
 ```js
 ics = "Kharif" / "Rabi"
+```
+
+## Indian Assessment Year  
+```js
+import {AY} from 'indian-fiscal-year';
+```
+
+## Input
+```js
+let date = new Date();
+let iay = AY(date);
+```
+
+## Output
+```js
+iay = 2025-2026
 ```
 
 For Bug Reports please use [issues](https://github.com/Parveen539/Indian-Fiscal-Year/issues)

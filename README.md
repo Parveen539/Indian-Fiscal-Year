@@ -2,7 +2,7 @@
 
 ## Features  
 - Get Indian Fiscal Year for a date.
-- 773b minified/420b gzipped
+- 1.7k minified/602b gzipped
 - No Dependencies.
 - Built with Typescript.
 

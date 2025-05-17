@@ -1,7 +1,7 @@
 {
   "name": "indian-fiscal-year",
   "version": "1.0.4",
-  "type": "module",
+  "type": "commonjs",
   "main": "./dist/cjs/index.js",
   "exports": {
     "import": "./dist/esm/index.js",

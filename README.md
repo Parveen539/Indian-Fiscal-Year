@@ -20,6 +20,9 @@ if you are using a module loader you will need to import the module.
 ```js
 import {FY} from 'indian-fiscal-year';
 ```
+or 
+```js 
+const {F}
 
 ## Input
 ```js

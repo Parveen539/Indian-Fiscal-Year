@@ -1,23 +1,22 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.IndianCropSeason = void 0;
-var IndianCropSeason = /** @class */ (function () {
-    function IndianCropSeason() {
+class IndianCropSeason {
+    constructor() {
+        this.CropSeason = "";
     }
-    IndianCropSeason.prototype.getCropSeason = function (date) {
-        var CropSeason = "";
+    getCropSeason(date) {
         switch (true) {
             case (date.getMonth() + 1) > 3 && (date.getMonth() + 1) < 11:
-                CropSeason = "Kharif";
+                this.CropSeason = "Kharif";
                 break;
             default:
-                CropSeason = "Rabi";
+                this.CropSeason = "Rabi";
                 break;
         }
-        return CropSeason;
-    };
+        return this.CropSeason;
+    }
     ;
-    return IndianCropSeason;
-}());
+}
 exports.IndianCropSeason = IndianCropSeason;
 ;

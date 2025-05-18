@@ -14,56 +14,86 @@ $ npm install indian-fiscal-year
 ``` 
 
 ## Usage
-if you are using a module loader you will need to import the module.  
+## Import Modules
+ESModule:  
+```js
+import FinYear from 'indian-fiscal-year';
+```
+CommonJS  
+```js 
+const FinYear = require ('indian-fiscal-year').default
+```
 
 ## Indian Fiscal Year  
-```js
-import {FY} from 'indian-fiscal-year';
-```
-or 
-```js 
-const {F}
-
 ## Input
 ```js
 let date = new Date();
-let ify = FY(date);
+let ify = FinYear.getFiscalYear(date)
 ```
 
 ## Output
 ```js
-ify = 2024-2025
+ify = 2025-2026
 ```
 ## Indian Crop Seasons  
-```js
-import {CropSeason} from 'indian-fiscal-year';
-```
-
 ## Input
 ```js
 let date = new Date();
-let ics = CropSeason(date);
+let cs = FinYear.getCropSeason(date)
 ```
 
 ## Output
 ```js
-ics = "Kharif" / "Rabi"
+cs = 'Kharif' or 'Rabi'
 ```
 
 ## Indian Assessment Year  
-```js
-import {AY} from 'indian-fiscal-year';
-```
-
 ## Input
 ```js
 let date = new Date();
-let iay = AY(date);
+let iay = FinYear.getAssesmentYear(date)
 ```
 
 ## Output
 ```js
-iay = 2025-2026
+iay = 2026-2027
 ```
+
+## Indian Tax Year  
+## Input
+```js
+let date = new Date();
+let ity = FinYear.getTaxYear(date)
+```
+
+## Output
+```js
+ity = 2025-2026
+```
+
+## Indian Fiscal Quarter  
+## Input
+```js
+let date = new Date();
+let qtr = FinYear.getQuarter(date)
+```
+
+## Output
+```js
+qtr = 'Q1' or 'Q2' or 'Q3' or 'Q4'
+```
+
+## Indian Fiscal Quarter Year  
+## Input
+```js
+let date = new Date();
+let qtrYear = FinYear.getQuarterYear(date)
+```
+
+## Output
+```js
+qtrYear = `Q1 FY 2025-2026`
+```  
+
 
 For Bug Reports and Suggestions please use [issues](https://github.com/Parveen539/Indian-Fiscal-Year/issues)

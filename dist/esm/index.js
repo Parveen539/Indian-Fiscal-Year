@@ -2,28 +2,31 @@ import { AssessmentYear } from "./IndianFiscYear/retrieveAssessmentYear.js";
 import { IndianCropSeason } from "./IndianFiscYear/retrieveCropSeason.js";
 import { RetrieveFinancialYear } from "./IndianFiscYear/retrieveFinancialYear.js";
 class FinYear {
-    constructor() {
-        this.FinYear = new RetrieveFinancialYear();
-        this._AssesmentYear = new AssessmentYear();
-        this.CS = new IndianCropSeason();
-    }
-    AY(date) {
+    // constructor() {
+    //   this.Fiscal = new RetrieveFinancialYear();
+    //   this._AssesmentYear = new AssessmentYear();
+    //   this.CS = new IndianCropSeason();
+    // }
+    static getAssesmentYear(date) {
         return this._AssesmentYear.getIndianAssessmentYear(date);
     }
-    FY(date) {
-        return this.FinYear.getIndianFiscalYear(date);
+    static getFiscalYear(date) {
+        return this.Fiscal.getIndianFiscalYear(date);
     }
-    CropSeason(date) {
+    static getCropSeason(date) {
         return this.CS.getCropSeason(date);
     }
-    Qtr(date) {
-        return this.FinYear.getQuarter(date);
+    static getQuarter(date) {
+        return this.Fiscal.getQuarter(date);
     }
-    Q_Yr(date) {
-        return this.FinYear.getQuarterYear(date);
+    static getQuarterYear(date) {
+        return this.Fiscal.getQuarterYear(date);
     }
-    TY(date) {
-        return this.FinYear.getIndianFiscalYear(date);
+    static getTaxYear(date) {
+        return this.Fiscal.getIndianFiscalYear(date);
     }
 }
+FinYear.Fiscal = new RetrieveFinancialYear();
+FinYear._AssesmentYear = new AssessmentYear();
+FinYear.CS = new IndianCropSeason();
 export default FinYear;

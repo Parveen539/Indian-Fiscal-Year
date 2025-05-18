@@ -1,16 +1,12 @@
-import { AssessmentYear } from "./IndianFiscYear/retrieveAssessmentYear.js";
-import { IndianCropSeason } from "./IndianFiscYear/retrieveCropSeason.js";
-import { RetrieveFinancialYear } from "./IndianFiscYear/retrieveFinancialYear.js";
 declare class FinYear {
-    FinYear: RetrieveFinancialYear;
-    _AssesmentYear: AssessmentYear;
-    CS: IndianCropSeason;
-    constructor();
-    AY(date: Date): string;
-    FY(date: Date): string;
-    CropSeason(date: Date): string;
-    Qtr(date: Date): string;
-    Q_Yr(date: Date): string;
-    TY(date: Date): string;
+    private static Fiscal;
+    private static _AssesmentYear;
+    private static CS;
+    static getAssesmentYear(date: Date): string;
+    static getFiscalYear(date: Date): string;
+    static getCropSeason(date: Date): string;
+    static getQuarter(date: Date): string;
+    static getQuarterYear(date: Date): string;
+    static getTaxYear(date: Date): string;
 }
 export default FinYear;
